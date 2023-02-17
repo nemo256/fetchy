@@ -167,14 +167,14 @@ void *os()
 			info.getPkgCount =
 				"grep 'P:' /lib/apk/db/installed | wc -l";
 		} else if (strncmp(osname, "Arch Linux", 10) == 0) {
-			info.col1 = BGRAY "\n";
-			info.col2 = BBLUE "      /\\      ";
-			info.col3 = BBLUE "     /  \\     ";
-			info.col4 = BBLUE "    /\\   \\    ";
-			info.col5 = BBLUE "   /      \\   ";
-			info.col6 = BBLUE "  /   ,,   \\  ";
-			info.col7 = BBLUE " /   |  |  -\\ ";
-			info.col8 = BBLUE "/_-''    ''-_\\\n";
+			info.col1 = BGRAY  "\n";
+			info.col2 = BBLUE  "      /\\      ";
+			info.col3 = BBLUE  "     /  \\     ";
+			info.col4 = BBLUE  "    /\\   \\    ";
+			info.col5 = BBLUE  "   /      \\   ";
+			info.col6 = INDIGO "  /   ,,   \\  "   BBLUE;
+			info.col7 = INDIGO " /   |  |  -\\ "   BBLUE;
+			info.col8 = INDIGO "/_-''    ''-_\\\n" BBLUE;
 			info.getPkgCount = "pacman -Qq | wc -l";
 		} else if (strncmp(osname, "Arch bang Linux", 15) ==
 				0) {
