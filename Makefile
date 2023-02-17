@@ -1,27 +1,27 @@
-SRC = src/fetch.c
+SRC = src/fetchy.c
 CC ?= cc
 CFLAGS = -O2 -std=c99 -Wall -Wextra
 LDFLAGS = -lpthread
 DEBUGFLAGS = -g -Og -std=c99 -Wall -Wextra
 PREFIX ?= /usr/local
 
-all: afetch
+all: fetchy
 
-afetch: ${SRC} src/config.h src/colour.h
-	${CC} ${CFLAGS} ${SRC} ${LDFLAGS} -o afetch
+fetchy: ${SRC} src/config.h src/colour.h
+	${CC} ${CFLAGS} ${SRC} ${LDFLAGS} -o fetchy
 
 debug:
-	${CC}  ${DEBUGFLAGS} ${SRC} ${LDFLAGS} -o afetch-debug
+	${CC}  ${DEBUGFLAGS} ${SRC} ${LDFLAGS} -o fetchy-debug
 
 clean:
-	rm -rf afetch afetch.dSYM afetch-debug afetch-debug.dSYM
+	rm -rf fetchy fetchy.dSYM fetchy-debug fetchy-debug.dSYM
 
-install: afetch
+install: fetchy
 	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp afetch ${DESTDIR}${PREFIX}/bin
-	chmod 711 ${DESTDIR}${PREFIX}/bin/afetch
+	cp fetchy ${DESTDIR}${PREFIX}/bin
+	chmod 711 ${DESTDIR}${PREFIX}/bin/fetchy
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/bin/afetch
+	rm -f ${DESTDIR}${PREFIX}/bin/fetchy
 
 .PHONY: all clean debug install uninstall
