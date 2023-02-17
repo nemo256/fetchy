@@ -18,5 +18,6 @@
 #define CYAN    "\033[0;36m"
 #define WHITE   "\033[0;37m"
 /* OTHER */
-#define RESET "\033[0;m"
-#define BITAL "\033[1;3m" 
+#define RESET   "\033[0;m"
+#define BITAL   "\033[1;3m" 
+#define INDIGO  "\033[0;1;38;5;55m" 
