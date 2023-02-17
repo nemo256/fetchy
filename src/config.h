@@ -14,7 +14,7 @@
 #define TextColour INDIGO
 
 #define PrintColours    true /* must be either 'true' or 'false' */
-#define ColourCharacter "●"
+#define ColourCharacter "󰓐"
 
 /* Some examples of things you may want to use for your ColourCharacter
 
