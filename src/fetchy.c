@@ -167,14 +167,14 @@ void *os()
 			info.getPkgCount =
 				"grep 'P:' /lib/apk/db/installed | wc -l";
 		} else if (strncmp(osname, "Arch Linux", 10) == 0) {
-			info.col1 = BGRAY  "\n";
+			info.col1 = BGRAY  "";
 			info.col2 = BBLUE  "       /\\      ";
 			info.col3 = BBLUE  "      /  \\     ";
 			info.col4 = BBLUE  "     /\\   \\    ";
 			info.col5 = BBLUE  "    /      \\   ";
 			info.col6 = INDIGO "   /   ,,   \\  "   BBLUE;
 			info.col7 = INDIGO "  /   |  |  -\\ "   BBLUE;
-			info.col8 = INDIGO " /_-''    ''-_\\\n" BBLUE;
+			info.col8 = INDIGO " /_-''    ''-_\\"   BBLUE;
 			info.getPkgCount = "pacman -Qq | wc -l";
 		} else if (strncmp(osname, "Arch bang Linux", 15) ==
 				0) {
@@ -519,11 +519,11 @@ void *colourDraw()
 	if (PrintColours == false)
 		return NULL;
 
-	printf("               ");
+	printf("                ");
 	for (int i = 30; i < 38; i++) {
 		printf("\033[0;%dm %s", i, ColourCharacter);
 	} // print regular term colours
-	printf("\n\n");
+	printf("\n");
 	return NULL;
 }
 

@@ -13,7 +13,7 @@
 /* See options in colour.h file */
 #define TextColour INDIGO
 
-#define PrintColours    false /* must be either 'true' or 'false' */
+#define PrintColours    true /* must be either 'true' or 'false' */
 #define ColourCharacter "󰓐"
 
 /* Some examples of things you may want to use for your ColourCharacter
