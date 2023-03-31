@@ -124,10 +124,10 @@ void *colourDraw()
 	if (PrintColours == false)
 		return NULL;
 
-	printf("                ");
-	for (int i = 30; i < 38; i++) {
+	printf("                  ");
+	for (int i = 31; i < 38; i++) {
 		printf("\033[0;%dm %s", i, ColourCharacter);
-	} // print regular term colours
+	}
 	printf("\n");
 	return NULL;
 }
