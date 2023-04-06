@@ -3,7 +3,7 @@
 # `fetchy`
 
 <h3>
-  Fork of 13-CF/afetch
+  Fork of <a href="https://github.com/13-CF/afetch">afetch</a>
 </h3>
 
 <!-- Badges -->
