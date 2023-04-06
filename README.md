@@ -3,7 +3,7 @@
 # `fetchy`
 
 <h3>
-  Fork of ![afetch](https://github.com/13-CF/afetch) System info fetcher
+  Fork of [afetch](https://github.com/13-CF/afetch) System info fetcher
 </h3>
 
 <!-- Badges -->
