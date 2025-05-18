@@ -14,5 +14,4 @@
 #define TextColour INDIGO
 
 #define PrintColours    true /* must be either 'true' or 'false' */
-#define ColourCharacter "█" // safe and visible everywhere
-
+#define ColourCharacter ""
